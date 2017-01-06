@@ -12,7 +12,7 @@ var UserSchema = mongoose.Schema({	                                //Each schema
 	},
 
 	facebook: {
-		id:		 	  {type:String},
+		id:		{type:String},
 		token: 		{type:String},
 		email: 		{type:String},
 		name: 		{type:String},
@@ -20,27 +20,27 @@ var UserSchema = mongoose.Schema({	                                //Each schema
 	  },
 	  
 	twitter: {
-		id: 		    {type:String},
+		id: 		  {type:String},
 		token: 		  {type:String},
 		displayName:{type:String},
 		name: 		  {type:String},
 	  },
 	  
 	google: {
-		id: 		  {type:String},
+		id: 		{type:String},
 		token: 		{type:String},
 		email: 		{type:String},
 		name: 		{type:String},
 	  },
 	 
 	github: {
-		id: 		  {type:String},
+		id: 		{type:String},
 		token: 		{type:String},
 		email: 		{type:String},
 		name: 		{type:String},
 	  },
 	linkedin: {
-		id: 		  {type:String},
+		id: 		{type:String},
 		token: 		{type:String},
 		email: 		{type:String},
 		name: 		{type:String},
