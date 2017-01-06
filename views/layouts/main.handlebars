@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Authentication</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/bootstrap.css" />
+	<link rel="stylesheet" href="/css/style.css" />
+	<!-- JS -->
+	<script type="text/javascript" src="/js/jqueryv1.11.2/jqueryv1.11.2.js"></script>
+	<!-- Set Icon-->
+	<link rel="icon" type="image/png" href="/images/image.png" sizes="32x32">
+</head>
+<body>
+	<div class="container">
+		<div class="header clearfix">
+			<nav>
+				<ul class="nav nav-pills pull-right">
+					{{#if user}}
+						<li role="presentation"><a href="/">Dashboard</a></li>
+						<li class="presentation"><a href="/users/logout">{{user.local.name}} {{user.facebook.name}} {{user.twitter.name}} {{user.google.name}} {{user.linkedin.name}} {{user.github.name}} Logout</a> </li>
+					{{else}}
+						<li role="presentation"><a href="/users/login">Login</a></li>
+						<li role="presentation"><a href="/users/register">Register</a></li>
+					{{/if}}
+				</ul>
+			</nav>
+			<h3 class="text-muted">Welcome to Automation</h3>
+			<h4 class="text-muted">{{user.local.name}} {{user.facebook.name}} {{user.twitter.name}} {{user.google.name}} {{user.linkedin.name}} {{user.github.name}}</h4>
+		</div>
+		
+		<div class="row">
+			<div class="col-lg-12">
+				{{#if success_msg}}
+				<div class="alert alert-success">{{success_msg}}</div>
+				{{/if}}
+				
+				{{#if error_msg}}
+					<div class="alert alert-danger">{{error_msg}}</div>
+				{{/if}}
+
+				{{#if error}}
+					<div class="alert alert-danger">{{error}}</div>
+				{{/if}}
+          
+			{{{body}}}
+			</div>
+      </div>
+
+		<footer class="footer">
+			<a hrfe="www.vatsalshah.in"><p>&copy; 2017 Vatsal Shah </p></a>
+		</footer>
+
+    </div> <!-- /container -->
+</body>
+</html>
