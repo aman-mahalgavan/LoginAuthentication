@@ -1,0 +1,52 @@
+<h2 class="page-header">Dashboard</h2>
+<p>Welcome to your dashboard</p>
+  
+{{#if user.local.username}}
+<h3> Local Login :  {{ user.local.username }} </h3>
+<p>
+	<strong>username</strong>: {{ user.local.username }}<br>
+	<strong>password</strong>: {{ user.local.password }}<br>
+	<strong>email</strong>: {{ user.local.email }}<br>
+	<strong>contactno</strong>: {{ user.local.contactno }}
+</p>
+{{/if}}
+
+<h3> Facebook Login </h3>
+<p>
+	<strong>id</strong>: {{ user.facebook.id }}<br>
+	<strong>token</strong>: {{ user.facebook.token }}<br>
+	<strong>email</strong>: {{ user.facebook.email }}<br>
+	<strong>name</strong>: {{ user.facebook.name }}
+</p>
+
+<h3> Google Login </h3>
+<p>
+	<strong>id</strong>: {{ user.google.id }}<br>
+	<strong>token</strong>: {{ user.google.token }}<br>
+	<strong>email</strong>: {{ user.google.email }}<br>
+	<strong>name</strong>: {{ user.google.name }}
+</p>
+
+<h3> Linkedin Login </h3>
+<p> 
+	<strong>id</strong>: {{ user.linkedin.id }}<br>
+	<strong>token</strong>: {{ user.linkedin.token }}<br>
+	<strong>email</strong>: {{ user.linkedin.email }}<br>
+	<strong>name</strong>: {{ user.linkedin.name }}
+</p>
+
+<h3> Twitter Login </h3>
+<p>
+	<strong>id</strong>: {{ user.twitter.id }}<br>
+	<strong>token</strong>: {{ user.twitter.token }}<br>
+	<strong>displayName</strong>: {{ user.twitter.displayName }}<br>
+	<strong>name</strong>: {{ user.twitter.name }}
+</p>
+
+<h3> Github Login </h3>
+<p>
+	<strong>id</strong>: {{ user.github.id }}<br>
+	<strong>token</strong>: {{ user.github.token }}<br>
+	<strong>email</strong>: {{ user.github.email }}<br>
+	<strong>name</strong>: {{ user.github.name }}
+</p>
