@@ -10,7 +10,7 @@ module.exports = {
 	//https://apps.twitter.com/app
 	'twitterAuth': {
 		'consumerKey': '*****************',
-		'consumerSecret': 'nyGFU2U0bb6kjvBBTToj6OLoIDbNjVX6jdVFGj7VMNMtnBHZM2',
+		'consumerSecret': '*********************************',
 		'callbackURL': 'http://192.168.75.239:80/users/auth/twitter/callback',
 	},
 	
